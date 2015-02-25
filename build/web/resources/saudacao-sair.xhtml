@@ -1,0 +1,47 @@
+<ui:composition
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui">
+    <style>
+        header#boasVindas {
+            display: block;
+            position: absolute;
+            font-family: verdana, sans-serif;
+            left: 500px; 
+            font-size: 18pt;
+            top: 130px;
+        }
+        header#boasVindas td {
+            background-color: white;
+        }
+
+
+        .sairForm .sairBotao {
+            position: absolute;
+            top: 50px;
+            left: 1110px;
+            height: 30px;
+            width: 70px;
+            color: white;
+            font-size: 15px;
+            border-radius: 10px;    
+            background-color: activecaption;
+        }
+    </style>
+    <header id="boasVindas">
+        <table>
+            <tr>
+                <td id="bemVindo">
+                    <script>saudacao();</script><strong style="color: white;">.</strong></td>
+                <td id="nomeCliente">Allan</td>
+            </tr>
+        </table>            
+    </header>
+    <header id="botaoSair">
+        <h:form styleClass="sairForm">
+            <p:commandButton styleClass="sairBotao" ajax="false" value="Sair" icon="ui-icon-power" 
+                             />
+        </h:form>
+    </header>
+</ui:composition>

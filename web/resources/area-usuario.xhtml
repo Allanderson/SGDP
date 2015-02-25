@@ -1,0 +1,17 @@
+<ui:composition template="template.xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui">
+    <ui:define name="titulo">Gerenciamento de Dívidas</ui:define>
+    <ui:define name="saudacao-sair">
+        <ui:include src="saudacao-sair.xhtml" />
+    </ui:define>
+    <ui:define name="conteudo">
+        <ui:include src="menu.xhtml" />
+        <br />
+        <strong style="color: white;">aqui vai ficar o valor total da divida do usuário<br />
+            e tbm uma tabela com com todas as dívidas dele.
+        </strong>
+    </ui:define>
+</ui:composition>

@@ -1,0 +1,22 @@
+<ui:composition
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui">
+        <style>
+            .menu{
+                width: 300px; 
+                margin: -51px auto 0px auto;
+            }
+        </style>
+        <h:form>
+            <p:menubar styleClass="menu">
+                <p:menuitem value="Home" icon="ui-icon-home" />
+                <p:submenu label="Contas" icon="ui-icon-calculator">
+                    <p:menuitem value="Dívidas" />
+                    <p:menuitem value="Limites" />
+                </p:submenu>
+                <p:menuitem value="Perfil" icon="ui-icon-person" />
+            </p:menubar>
+        </h:form>
+</ui:composition>
