@@ -1,0 +1,29 @@
+<ui:composition template="template.xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <ui:define name="titulo">Gerenciamento de Dívidas</ui:define>
+    <ui:define name="conteudo">
+        <div id="informacao-cadastro">
+            <h:outputText value="Cadastre-se " /><p:link value="Aqui" style="text-decoration: none; color: white;" 
+                                                         href="cadastro-usuario.xhtml" />
+        </div>
+        <fieldset>
+            <h:form styleClass="form-login">
+                <h:panelGrid columns="2">
+                    <p:outputLabel for="login" value="Login: " styleClass="label"/>
+                    <p:inputText id="login" styleClass="campo"/>
+                    <p:outputLabel for="senha" value="Senha: " styleClass="label"/>
+                    <p:password id="senha" styleClass="campo"/>
+                </h:panelGrid>
+                <h:panelGrid columns="2">
+                    <p:commandButton value="Entrar" styleClass="botao" />
+                </h:panelGrid>
+            </h:form>
+        </fieldset>
+        <h:outputText value="Usuário ou senha Inválidos" style="color: white; font-family: verdana;"/>
+    </ui:define>
+</ui:composition>
+

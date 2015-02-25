@@ -3,10 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Allanderson%20Nunes/Documents/NetBeansProjects/SGDP/src/java/managedBean/UsuarioBean.java</file>
-            <file>file:/C:/Users/Allanderson%20Nunes/Documents/NetBeansProjects/SGDP/src/java/DAO/UsuarioDAO.java</file>
-            <file>file:/C:/Users/Allanderson%20Nunes/Documents/NetBeansProjects/SGDP/src/java/pojo/Usuario.java</file>
-            <file>file:/C:/Users/Allanderson%20Nunes/Documents/NetBeansProjects/SGDP/src/java/conexaoBanco/ConnectionFactory.java</file>
+            <file>file:/C:/Users/Allanderson%20Nunes/Documents/NetBeansProjects/SGDP/web/resources/index.xhtml</file>
+            <file>file:/C:/Users/Allanderson%20Nunes/Documents/NetBeansProjects/SGDP/web/resources/template.xhtml</file>
+            <file>file:/C:/Users/Allanderson%20Nunes/Documents/NetBeansProjects/SGDP/web/resources/saudacao-sair.xhtml</file>
+            <file>file:/C:/Users/Allanderson%20Nunes/Documents/NetBeansProjects/SGDP/web/resources/area-usuario.xhtml</file>
+            <file>file:/C:/Users/Allanderson%20Nunes/Documents/NetBeansProjects/SGDP/web/resources/css/estilo.css</file>
+            <file>file:/C:/Users/Allanderson%20Nunes/Documents/NetBeansProjects/SGDP/web/resources/cadastro-usuario.xhtml</file>
+            <file>file:/C:/Users/Allanderson%20Nunes/Documents/NetBeansProjects/SGDP/web/resources/menu.xhtml</file>
         </group>
     </open-files>
 </project-private>
