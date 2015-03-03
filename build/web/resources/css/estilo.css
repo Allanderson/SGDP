@@ -1,87 +1,49 @@
-body{
-    background-color: silver; /*rgba(0, 0, 0, 0.5);*/
-    font-family: verdana, sans-serif;
-}
 
-/*Formatação do corpo da página*/
-#corpo {
-    border-radius: 10px;;
-    width: 1050px;
-    margin: 0px auto 0px auto;
-    background-color: darkblue;
-}
+.home{display: block;
+      text-align: center;
+      position: absolute;
+      font-family: verdana, sans-serif;
+      left: 700px;
+      top: 45px;}
 
-/*Formatação do cabeçalho onde se encontra o nome do sistema*/
+.home2{display: block;
+       text-align: center;
+       position: absolute;
+       font-family: verdana, sans-serif;
+       left: 850px;
+       top: 200px;}
 
-header#cabecalho {
-    background-color:white;
-    width: 1000px;
-    height: 120px;
-    margin: 50px auto 50px auto;
-    border-bottom: 1px solid #606060;
-}
+.contas{display: block;
+        text-align: center;
+        position: absolute;
+        font-family: verdana, sans-serif;
+        left: 600px;
+        top: 45px;}
 
-.img-logo{
-    width: 120px;
-    height: 120px;
-    margin: 0px auto 0px auto;
-}
+.historico-field{display: block;
+                 text-align: center;
+                 position: relative;
+                 font-family: verdana, sans-serif;
+                 top: 50px;}
 
-#informacao-cadastro{
-    color: white;
-    text-decoration: none;
-    position: absolute;
-    left: 180px;
-    top: 180px;
-}
+.lista-usuario{
+               text-align: center;
+               position: relative;
+               font-family: verdana, sans-serif;
+               top: 60px;
+                }
+                
+.layout-center{background-color: black;
+               padding:0pt 0pt 5pt 0pt;}
 
-fieldset{
-    background-color: white;
-    width: 100px;
-    height: 100px;
-    margin: 20px auto 0px auto;
-    border-radius: 10px;
+.layout-north{background-color: black;
+              padding: 3pt 0pt 3pt 0pt;
+              text-align: center;
 }
+.layout-south{background-color:black;
+              padding: 3pt 0pt 3pt 0pt;}
 
-fieldset#cadastro{
-    background-color: white;
-    width: 100px;
-    height: 140px;
-    margin: 20px auto 0px auto;
-    border-radius: 10px;
-}
+body{background-color: white;}
 
-.label{
-    padding: 20px;
-    font-size: 13pt;
-    font-stretch: inherit;
-    font-family: verdana;
-}
+#painelLogon{background-position: center;}
 
-.campo{
-    border-radius: 8px;
-    font-size: 13pt;
-    font-family: verdana;
-}
-
-.botao{
-    padding: 20px;
-    font-family: verdana;
-    background-color: darkblue;
-    color: white;
-    font-size: 10pt;
-    width: 100px;
-    margin-top: 5px;
-}
-
-/*Formatação do rodapé*/
-footer#rodape {
-    background-color: white;
-    width: 1000px;
-    height: 50px;    
-    margin: 20px auto 10px auto;
-    border-top: 1px solid #606060;	
-    text-align: center;	
-    font-family: Arial, sans-serif;
-    color: #000;
-}

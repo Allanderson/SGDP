@@ -1,29 +1,84 @@
-<ui:composition template="template.xhtml"
-                xmlns:h="http://java.sun.com/jsf/html"
-                xmlns:f="http://java.sun.com/jsf/core"
-                xmlns:ui="http://java.sun.com/jsf/facelets"
-                xmlns:p="http://primefaces.org/ui"
-                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
-    <ui:define name="titulo">Gerenciamento de Dívidas</ui:define>
-    <ui:define name="conteudo">
-        <div id="informacao-cadastro">
-            <h:outputText value="Cadastre-se " /><p:link value="Aqui" style="text-decoration: none; color: white;" 
-                                                         href="cadastro-usuario.xhtml" />
-        </div>
-        <fieldset>
-            <h:form styleClass="form-login">
-                <h:panelGrid columns="2">
-                    <p:outputLabel for="login" value="Login: " styleClass="label"/>
-                    <p:inputText id="login" styleClass="campo"/>
-                    <p:outputLabel for="senha" value="Senha: " styleClass="label"/>
-                    <p:password id="senha" styleClass="campo"/>
-                </h:panelGrid>
-                <h:panelGrid columns="2">
-                    <p:commandButton value="Entrar" styleClass="botao" />
-                </h:panelGrid>
-            </h:form>
-        </fieldset>
-        <h:outputText value="Usuário ou senha Inválidos" style="color: white; font-family: verdana;"/>
-    </ui:define>
-</ui:composition>
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Facelet Title</title>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    </h:head>
+    <h:body>
+        <f:view>
+            <p:layout fullPage="true">
+                <p:layoutUnit styleClass="layout-north" position="north" 
+                              size="65" resizable="true" closable="true" collapsible="true" >
+                    <ui:insert name="menu">
+                        <h:graphicImage value="imagens/logo.jpg" width="120" height="47"/>
+                    </ui:insert>
+                </p:layoutUnit>
+
+                <p:layoutUnit styleClass="layout-center" position="center">
+                    <ui:insert name="center">
+                     <p:fieldset legend="Logar">
+                            <center>   
+                                <h:form>
+                                    <p:panelGrid columns="2" id="usuario" >
+                                        <p:outputLabel value="Usuario :" />
+                                        <p:inputText id="login" required="true" />
+
+                                        <p:outputLabel value="Senha :" />
+                                        <p:password id="senha" required="true" />
+
+                                    </p:panelGrid>
+                                    <p:commandButton value="ENVIAR" update="usuario"
+                                                     action="home.xhtml" />
+                                    <p:commandButton value="LIMPAR" type="reset" />
+                                </h:form>
+                            </center>
+                        </p:fieldset>
+
+                        <p:fieldset legend="Não e Cadastrado" toggleable="true" collapsed="true">
+                            <center>
+                                <h:form>
+                                    <p:growl id="cadastrar"/>
+                                    <p:panelGrid columns="3" id="cadastro" >
+                                        <p:outputLabel value="Nome : *" />
+                                        <p:inputText id="nomeCad" value="" required="true"
+                                                     requiredMessage="Campo Nome e Obrigatorio !!"/>
+                                        <p:message for="nomeCad" />
+
+                                        <p:outputLabel value="Usuario : *" />
+                                        <p:inputText id="loginCad" value="" required="true"
+                                                     requiredMessage="Campo usuario e Obrigatorio !!"/>
+                                        <p:message for="loginCad" />
+
+                                        <p:outputLabel value="Senha : *" />
+                                        <p:password id="senhaCad" value="" required="true"
+                                                    requiredMessage="Campo Senha e Obrigatorio !!"/>
+                                        <p:message for="senhaCad" />
+
+                                        <p:outputLabel value="C. Senha : *" />
+                                        <p:password id="consenha" value="" required="true"
+                                                    requiredMessage="Campo Comfirmar senha e Obrigatorio !!"/>
+                                        <p:message for="consenha" />
+                                    </p:panelGrid>
+                                    <p:commandButton value="cadastrar" update="cadastrar" />
+                                    <p:commandButton value="limpar" type="reset" />
+                                </h:form>
+                            </center>
+                        </p:fieldset>
+                    </ui:insert>
+                </p:layoutUnit>
+
+                <p:layoutUnit styleClass="layout-south" position="south" size="65"
+                              closable="true" collapsible="true">
+                    rodape da pagina !!
+                </p:layoutUnit>
+
+            </p:layout>
+        </f:view>
+    </h:body>
+</html>
 

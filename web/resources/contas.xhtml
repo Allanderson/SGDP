@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    
+    <ui:decorate template="index.xhtml">
+        <ui:define name="center">
+            <ui:include src="menu-logon.xhtml"/>
+            <ui:include src="saudacao-sair.xhtml" /> 
+            <ui:include src="limite-saldo.xhtml" />
+            
+            <p:fieldset styleClass="contas" legend="Todas as Dividas" toggleable="true">
+                <p:dataTable  value="" var="dividas" >
+
+                    <p:column headerText="Nome ">
+                        <p:outputLabel value="Rafael" />
+                    </p:column>
+
+                    <p:column headerText="data">
+                        <p:outputLabel value="17/03/2011" />
+                    </p:column>
+
+                    <p:column headerText="Prazo">
+                        <p:outputLabel value="20 dias" />
+                    </p:column>
+
+                    <p:column headerText="caracteristica">
+                        <p:outputLabel value="20 dias" />
+                    </p:column>
+                    
+                    <p:column headerText="Preço">
+                        <p:outputLabel value="20 dias" />
+                    </p:column>
+                    
+                    <p:column headerText="Estatus">
+                        <p:outputLabel value="null" />
+                    </p:column>
+                    
+                    <p:column headerText="Visualizar">
+                        <p:graphicImage value="imagens/contas.jpeg" height="25" width="25" />
+                    </p:column>
+                    
+                    <p:column headerText="Alterar">
+                        <p:graphicImage value="imagens/editar.png" height="25" width="25" />
+                    </p:column>
+                    
+                </p:dataTable>
+
+            </p:fieldset>
+        </ui:define>
+    </ui:decorate>
+</html>
+
